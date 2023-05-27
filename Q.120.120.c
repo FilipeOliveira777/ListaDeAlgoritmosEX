@@ -4,7 +4,7 @@ void main(){
 
 	int n,soma=0,k=1;
 	
-	printf("informe um numero inteiro");
+	printf("informe um numero inteiro: ");
 	   scanf("%d",&n);
 	   
 	while(soma+k<=n){
