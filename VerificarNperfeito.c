@@ -3,7 +3,7 @@
 //exatos exceto ele mesmo. Por exemplo, o número 6 (1+2+3) é um número perfeito.
 #include<stdio.h>
 void main(){
-	int k,n,divisores,soma=0;
+	int k,n,soma=0;
 	printf("informe um numero inteiro: ");
 	scanf("%d",&n);
 	for(k=1; k<n; k++){
