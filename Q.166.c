@@ -16,7 +16,7 @@ void main(){
 		printf("informe um numero inteiro VetorB: ");
 		scanf("%d",&vetb[k]);
 	}
-	//comparando os elemnetos do Vetor A com B.
+	//comparando os elementos do Vetor A com B.
 	for(k=0; k<tamanho; k++){
 		for(i=0; i<tamanho; i++){
 			if(veta[k]==vetb[i]){
