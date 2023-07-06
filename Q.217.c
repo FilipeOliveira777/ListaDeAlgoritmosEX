@@ -9,21 +9,32 @@ int calcularmilhar(int n){
 	return milhar;
 }
 //calculando a unidade da centena.
-int calculacentena(int n){
+int calcularcentena(int n){
 	int centena;
-	centena=n%100;
+	centena=(n%1000)/100;
 	return centena;
 }
 //calculando a unidade da dezena.
 int calculardezena(int n){
 	int dezena;
-	dezena=n%10;
+	dezena=(n%100)/10;
 	return dezena;
 }
 //calculando a unidade.
 int calcularunidade(int n){
 	int unidade;
-	unidade=n/1;
+	unidade=(n%10)/1;
 	return unidade;
 }
 //fazendo o programa principal(main).
+void main(){
+	int n,milhar,centena,dezena,unidade;
+	printf("Informe um numero: ");
+	scanf("%d",&n);
+	milhar=calcularmilhar(n);
+	centena=calcularcentena(n);
+	dezena=calculardezena(n);
+	unidade=calcularunidade(n);
+	printf("A milhar do numero %d eh %d\nA centena eh %d\nA dezena eh %d\nE a unidade eh %d",n,milhar,centena,dezena,unidade);
+getch();
+}
